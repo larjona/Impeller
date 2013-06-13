@@ -137,6 +137,12 @@ public class FeedActivity extends ActivityWithAccount implements Feed.Listener, 
             	postIntent.putExtra("account", m_account);
             	startActivity(postIntent);
             	return true;
+            	
+            case R.id.action_postArticle:
+            	Intent postArticleIntent = new Intent(this, PostArticleActivity.class);
+            	postArticleIntent.putExtra("account", m_account);
+            	startActivity(postArticleIntent);
+            	return true;
 
             default:
                 return super.onOptionsItemSelected(item);

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/action_bold" android:title="@string/action_bold" android:checkable="false" android:checked="false" android:visible="true" android:menuCategory="container" android:enabled="true" android:showAsAction="always" android:icon="@drawable/ic_action_bold"></item>
+    <item android:id="@+id/action_italic" android:title="@string/action_italic" android:menuCategory="container" android:showAsAction="always" android:icon="@drawable/ic_action_italic"></item>
+    <item android:id="@+id/action_underline" android:title="@string/action_underline" android:showAsAction="always" android:icon="@drawable/ic_action_underline"></item>
+    
+
+</menu>

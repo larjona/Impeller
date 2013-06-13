@@ -16,5 +16,11 @@
     <string name="action_like">Like</string>
     <string name="action_unlike">Unlike</string>
     <string name="cancel_button">Cancel</string>
+    <string name="title_activity_post_article">Post Article</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="label_title">Title: </string>
+    <string name="action_bold">Bold</string>
+    <string name="action_italic">Italic</string>
+    <string name="action_underline">Underline</string>
 
 </resources>

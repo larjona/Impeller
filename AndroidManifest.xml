@@ -40,7 +40,6 @@
             android:label="@string/title_activity_login"
             android:windowSoftInputMode="adjustResize|stateVisible" >
         </activity>
-        
         <activity
             android:name="eu.e43.impeller.SettingsActivity"
             android:label="@string/title_activity_settings"
@@ -72,11 +71,13 @@
                 android:value="eu.e43.impeller.FeedActivity" />
 
             <intent-filter>
-                <category android:name="android.intent.category.DEFAULT"/>
-				<action android:name="eu.e43.impeller.SHOW_OBJECT" />
-				<data android:scheme="http"  />
-				<data android:scheme="https" />
-				<data android:scheme="acct"  />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="eu.e43.impeller.SHOW_OBJECT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="acct" />
             </intent-filter>
         </activity>
 
@@ -89,16 +90,26 @@
         <activity
             android:name="eu.e43.impeller.PostActivity"
             android:label="@string/title_activity_post"
-            android:theme="@style/AppDialogTheme"
-            android:parentActivityName="eu.e43.impeller.FeedActivity">
+            android:parentActivityName="eu.e43.impeller.FeedActivity"
+            android:theme="@style/AppDialogTheme" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="eu.e43.impeller.FeedActivity" />
-            
-			<intent-filter>
+
+            <intent-filter>
                 <action android:name="android.intent.action.SEND" />
+
                 <data android:mimeType="text/plain" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="eu.e43.impeller.PostArticleActivity"
+            android:label="@string/title_activity_post_article"
+            android:parentActivityName="eu.e43.impeller.FeedActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="eu.e43.impeller.FeedActivity" />
         </activity>
     </application>
 
